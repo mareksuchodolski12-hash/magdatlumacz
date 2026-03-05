@@ -2,10 +2,12 @@
 
 body {
   @apply bg-slate-50 text-slate-900 antialiased;
+  background-image: radial-gradient(circle at top left, rgb(14 116 144 / 0.08), transparent 35%),
+    radial-gradient(circle at top right, rgb(245 158 11 / 0.08), transparent 40%);
 }
 
 a {
-  @apply transition-colors;
+  @apply transition-colors duration-200;
 }
 
 img {
@@ -14,14 +16,43 @@ img {
 
 @layer components {
   .page-container {
-    @apply mx-auto w-full max-w-screen-lg px-4 md:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-screen-xl px-4 md:px-6 lg:px-8;
   }
 
   .page-section {
-    @apply space-y-6 py-12;
+    @apply space-y-8 py-12 md:space-y-10 md:py-16;
   }
 
   .readable-copy {
-    @apply max-w-prose leading-relaxed text-slate-700;
+    @apply max-w-prose text-[1.04rem] leading-relaxed text-slate-700;
+  }
+
+  .section-shell {
+    @apply rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-[0_10px_30px_-18px_rgba(15,23,42,0.45)] backdrop-blur-sm md:p-8;
+  }
+
+  .section-title {
+    @apply text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl;
+  }
+
+  .section-subtitle {
+    @apply text-xl font-semibold tracking-tight text-slate-900;
+  }
+
+  .premium-card {
+    @apply rounded-xl border border-slate-200/80 bg-white p-6 shadow-[0_8px_28px_-20px_rgba(15,23,42,0.55)];
+  }
+
+  .language-pill {
+    @apply rounded-full border border-cyan-700/15 bg-cyan-50 px-3 py-1 text-sm font-semibold text-cyan-900;
+  }
+
+  .hero-shell {
+    @apply relative overflow-hidden rounded-2xl border border-cyan-800/10 bg-gradient-to-br from-cyan-950 via-slate-900 to-slate-950 p-6 text-slate-100 shadow-[0_25px_60px_-35px_rgba(15,23,42,0.85)] md:p-10;
+  }
+
+  .hero-shell::after {
+    content: "";
+    @apply pointer-events-none absolute -right-28 -top-28 h-72 w-72 rounded-full bg-amber-300/20 blur-3xl;
   }
 }
