@@ -7,5 +7,5 @@ type Props = {
 };
 
 export default function Card({ as: Component = "article", className = "", children }: Props) {
-  return <Component className={`premium-card ${className}`.trim()}>{children}</Component>;
+  return <Component className={`premium-card h-full ${className}`.trim()}>{children}</Component>;
 }

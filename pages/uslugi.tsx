@@ -4,32 +4,32 @@ import Section from "@/components/ui/Section";
 
 const services = [
   {
-    title: "Tłumaczenia pisemne",
-    description: "Dokumenty urzędowe, prawne, techniczne i biznesowe przygotowane z dbałością o terminologię.",
+    title: "Schriftelijke vertalingen",
+    description: "Officiële, juridische, technische en zakelijke documenten met consistente terminologie.",
   },
   {
-    title: "Tłumaczenia ustne",
-    description: "Wsparcie językowe podczas spotkań urzędowych, konsultacji i rozmów biznesowych.",
+    title: "Tolkdiensten",
+    description: "Professionele tolkondersteuning bij afspraken, consulten en zakelijke gesprekken.",
   },
   {
-    title: "Tłumaczenia przysięgłe",
-    description: "Tłumaczenia poświadczone zgodnie z wymogami instytucji w Holandii i za granicą.",
+    title: "Beëdigde vertalingen",
+    description: "Beëdigde vertaling conform de eisen van overheden, rechtbanken en officiële instanties.",
   },
   {
-    title: "Tłumaczenia prawnicze",
-    description: "Umowy, pełnomocnictwa i pisma formalne z zachowaniem poprawności prawnej.",
+    title: "Juridische vertalingen",
+    description: "Contracten, volmachten en formele documenten met juridisch correcte formuleringen.",
   },
   {
-    title: "Tłumaczenia techniczne",
-    description: "Dokumentacja techniczna, instrukcje oraz materiały branżowe dla firm.",
+    title: "Technische vertalingen",
+    description: "Handleidingen, productspecificaties en vakinhoudelijke documentatie voor bedrijven.",
   },
   {
-    title: "Tłumaczenia biznesowe",
-    description: "Oferty, raporty, korespondencja i materiały wspierające współpracę międzynarodową.",
+    title: "Zakelijke vertalingen",
+    description: "Offertes, rapporten en correspondentie die internationale samenwerking ondersteunen.",
   },
   {
-    title: "Szkolenia językowe",
-    description: "Kursy indywidualne i firmowe, w tym Business English, dopasowane do celów uczestników.",
+    title: "Taaltrainingen",
+    description: "Trainingen in Engels, Zweeds, Deens, Noors en Pools voor teams en individuele cursisten.",
   },
 ];
 
@@ -37,33 +37,35 @@ export default function ServicesPage() {
   return (
     <>
       <SeoHead
-        title="Usługi tłumaczeniowe w Holandii | Tłumaczenia pisemne, ustne i przysięgłe"
-        description="Kompleksowe usługi tłumaczeniowe: tłumaczenia dokumentów, tłumaczenia przysięgłe, interpretacja oraz szkolenia językowe dla firm i osób prywatnych."
-        keywords="usługi tłumaczeniowe Holandia, tłumaczenia dokumentów, tłumaczenia ustne"
+        title="Diensten | Vertalingen, beëdigde vertaling, tolk en taaltraining"
+        description="Ontdek de diensten van Vertaalbureau Magda: schriftelijke vertalingen, beëdigde vertaling, tolkdiensten en taaltrainingen in meerdere talen."
+        keywords="beëdigde vertaling, tolk, vertaler, taaltraining, juridisch, technisch, zakelijk"
       />
       <div className="page-container page-section">
         <Section className="space-y-6">
-          <h1 className="section-title">Usługi tłumaczeniowe dopasowane do realnych potrzeb</h1>
+          <h1 className="section-title">Diensten afgestemd op uw praktijk</h1>
           <p className="readable-copy">
-            Każda usługa jest realizowana z naciskiem na jakość językową, zgodność formalną i bezpieczeństwo danych.
+            Elke opdracht wordt uitgevoerd met focus op inhoudelijke precisie, formele correctheid en vertrouwelijke
+            verwerking van documenten.
           </p>
+          <div className="gold-divider" />
         </Section>
 
         <section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <Card key={service.title}>
-              <h2 className="text-xl font-semibold tracking-tight text-slate-900">{service.title}</h2>
-              <p className="mt-2 leading-relaxed text-slate-700">{service.description}</p>
+              <h2 className="text-xl font-semibold tracking-tight text-[#213B34]">{service.title}</h2>
+              <p className="mt-2 leading-relaxed text-gray-700">{service.description}</p>
             </Card>
           ))}
         </section>
 
         <Section>
-          <h3 className="section-subtitle">Proces współpracy</h3>
-          <ol className="mt-4 list-decimal space-y-2 pl-5 leading-relaxed text-slate-700">
-            <li>Przesyłasz zapytanie lub dokument do analizy.</li>
-            <li>Otrzymujesz wycenę, termin i formę realizacji.</li>
-            <li>Po akceptacji realizuję usługę i przekazuję gotowe materiały.</li>
+          <h3 className="section-subtitle">Werkwijze</h3>
+          <ol className="mt-4 list-decimal space-y-2 pl-5 leading-relaxed text-gray-700">
+            <li>U stuurt uw vraag of document voor analyse.</li>
+            <li>U ontvangt een duidelijke offerte, planning en levervorm.</li>
+            <li>Na akkoord lever ik de vertaling of tolkdienst volgens afspraak.</li>
           </ol>
         </Section>
       </div>

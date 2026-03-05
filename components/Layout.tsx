@@ -3,11 +3,11 @@ import { ReactNode, useEffect, useState } from "react";
 import Button, { getButtonClassName } from "@/components/ui/Button";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/o-mnie", label: "O mnie" },
-  { href: "/uslugi", label: "Usługi" },
-  { href: "/jezyki", label: "Języki" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/", label: "Start" },
+  { href: "/o-mnie", label: "Over mij" },
+  { href: "/uslugi", label: "Diensten" },
+  { href: "/jezyki", label: "Talen" },
+  { href: "/kontakt", label: "Contact" },
 ];
 
 export default function Layout({ children }: { children: ReactNode }) {
@@ -25,17 +25,17 @@ export default function Layout({ children }: { children: ReactNode }) {
   };
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900">
-      <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/90 backdrop-blur-md">
+    <div className="min-h-screen bg-transparent text-[#213B34]">
+      <header className="sticky top-0 z-40 border-b border-[#6F9E8F]/20 bg-white/90 backdrop-blur-md">
         <div className="page-container flex items-center justify-between py-4">
-          <Link href="/" className="text-lg font-bold tracking-tight text-slate-900 md:text-xl">
+          <Link href="/" className="text-lg font-semibold tracking-tight text-[#213B34] md:text-xl">
             Vertaalbureau Magda
           </Link>
 
           <Button
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
-            aria-label="Toggle navigation menu"
+            aria-label="Navigatiemenu openen of sluiten"
             onClick={() => setIsMenuOpen((previous) => !previous)}
             variant="secondary"
             className="xl:hidden"
@@ -43,13 +43,13 @@ export default function Layout({ children }: { children: ReactNode }) {
             Menu
           </Button>
 
-          <nav aria-label="Główna nawigacja" className="hidden xl:block">
+          <nav aria-label="Hoofdnavigatie" className="hidden xl:block">
             <ul className="flex flex-wrap gap-2 text-sm font-medium">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="inline-flex min-h-11 items-center rounded-lg px-3 text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                    className="inline-flex min-h-11 items-center rounded-lg px-3 text-[#3D6D61] hover:bg-[#F3F8F4] hover:text-[#213B34]"
                   >
                     {item.label}
                   </Link>
@@ -62,8 +62,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         {isMenuOpen && (
           <nav
             id="mobile-navigation"
-            aria-label="Nawigacja mobilna"
-            className="border-t border-slate-200/90 bg-white/95 xl:hidden"
+            aria-label="Mobiele navigatie"
+            className="border-t border-[#6F9E8F]/20 bg-white/95 xl:hidden"
           >
             <ul className="page-container flex flex-col py-3">
               {navItems.map((item) => (
@@ -84,10 +84,24 @@ export default function Layout({ children }: { children: ReactNode }) {
 
       <main className="text-base leading-relaxed md:text-lg">{children}</main>
 
-      <footer className="border-t border-slate-200/90 bg-white/80 py-8 backdrop-blur-sm">
-        <div className="page-container flex flex-col gap-2 text-sm text-slate-600">
+      <footer className="border-t border-[#6F9E8F]/20 bg-white/85 py-10 backdrop-blur-sm">
+        <div className="page-container flex flex-col gap-3 text-sm text-[#3D6D61]">
           <p>© {new Date().getFullYear()} Vertaalbureau Magda</p>
-          <p>Profesjonalne tłumaczenia i szkolenia językowe w Holandii.</p>
+          <p>Professionele vertalingen, tolkdiensten en taaltrainingen in Nederland.</p>
+          <p>
+            Website ontwikkeld door{" "}
+            <a
+              href="https://www.websitepilot.nl/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-[#2F6B5B] underline decoration-[#6F9E8F]/60 underline-offset-4 transition hover:text-[#213B34]"
+            >
+              WebsitePilot.nl
+            </a>
+          </p>
+          <p className="w-fit rounded-full border border-[#6F9E8F]/35 bg-[#F3F8F4] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#2B5E52] shadow-[0_8px_20px_-16px_rgba(33,59,52,0.75)]">
+            Signature Line: Crafted for trust, built for results
+          </p>
         </div>
       </footer>
     </div>

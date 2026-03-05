@@ -7,5 +7,5 @@ type Props = {
 };
 
 export default function Section({ as: Component = "section", className = "", children }: Props) {
-  return <Component className={`section-shell ${className}`.trim()}>{children}</Component>;
+  return <Component className={`section-shell space-y-6 ${className}`.trim()}>{children}</Component>;
 }

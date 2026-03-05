@@ -8,9 +8,9 @@ export function getButtonClassName(variant: ButtonVariant = "primary", size: But
     "inline-flex items-center justify-center rounded-xl font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2";
   const variantClasses = {
     primary:
-      "bg-cyan-700 text-white shadow-[0_10px_24px_-14px_rgba(8,145,178,0.95)] hover:bg-cyan-800 focus-visible:outline-cyan-700",
+      "bg-[#A8C98B] text-[#213B34] shadow-sm hover:bg-[#95b878] hover:shadow-md focus-visible:outline-[#A8C98B]",
     secondary:
-      "border border-slate-300 bg-white text-slate-800 shadow-sm hover:border-slate-400 hover:bg-slate-50 focus-visible:outline-slate-700",
+      "border border-[#6F9E8F]/30 bg-white text-[#213B34] shadow-sm hover:border-[#6F9E8F]/50 hover:bg-[#F3F8F4] focus-visible:outline-[#6F9E8F]",
   };
   const sizeClasses = {
     md: "min-h-11 px-5 py-2.5 text-sm sm:text-base",

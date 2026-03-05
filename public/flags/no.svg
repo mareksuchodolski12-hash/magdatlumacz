@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" role="img" aria-label="Norge flagg">
+  <rect width="60" height="40" fill="#BA0C2F"/>
+  <rect x="15" y="0" width="10" height="40" fill="#FFFFFF"/>
+  <rect x="0" y="15" width="60" height="10" fill="#FFFFFF"/>
+  <rect x="17" y="0" width="6" height="40" fill="#00205B"/>
+  <rect x="0" y="17" width="60" height="6" fill="#00205B"/>
+</svg>
