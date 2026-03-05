@@ -291,15 +291,20 @@ Gotowe do wdrożenia jako treści produkcyjne w CMS.
 ## 9) Analiza stanu projektu i decyzja: Visual Studio czy jeszcze nie?
 
 ### Co mamy teraz
-- Repo zawiera obecnie wyłącznie dokument `README.md` z gotowym pakietem treści SEO do wdrożenia.
-- Brak kodu aplikacji, brak projektu CMS, brak backendu, brak testów i konfiguracji build/lint.
+- Repo zawiera działającą aplikację **Next.js** (strony, komponenty UI, style, konfigurację TypeScript i ESLint).
+- Projekt ma gotowe skrypty deweloperskie: `npm run dev`, `npm run lint`, `npm run build`.
 
 ### Czy to już czas na przejście do Visual Studio?
-**Jeszcze nie jako konieczność.**  
-Na tym etapie pracujesz głównie na treści i strukturze informacji, więc wystarczy lekki edytor (np. VS Code) lub bezpośrednia edycja w repo.
+**Tak — projekt jest gotowy, żeby „wrzucić” do Visual Studio / VS Code.**  
+To projekt Node.js/Next.js, więc najlepiej pracuje się w VS Code, ale może też być otwarty w Visual Studio 2022 (workload Node.js).
+
+### Jak uruchomić projekt lokalnie po otwarciu
+1. `npm ci`
+2. `npm run dev` (tryb developerski)
+3. `npm run lint` i `npm run build` (weryfikacja przed publikacją)
 
 ### Kiedy przejście do Visual Studio będzie uzasadnione
-Przejście ma sens, gdy zacznie się etap developerski, np.:
+Przejście ma sens, gdy zacznie się etap deweloperski, np.:
 - powstanie projekt webowy oparty o .NET/C#,
 - pojawi się wiele projektów w jednym solution (`.sln`),
 - dojdzie debugowanie backendu, testy jednostkowe/integracyjne i publikacja.
