@@ -301,7 +301,7 @@ Na tym etapie pracujesz głównie na treści i strukturze informacji, więc wyst
 ### Kiedy przejście do Visual Studio będzie uzasadnione
 Przejście ma sens, gdy zacznie się etap developerski, np.:
 - powstanie projekt webowy oparty o .NET/C#,
-- pojawią się wiele projektów w jednym solution (`.sln`),
+- pojawi się wiele projektów w jednym solution (`.sln`),
 - dojdzie debugowanie backendu, testy jednostkowe/integracyjne i publikacja.
 
 ### Gotowy prompt do użycia w Visual Studio (Copilot Chat)
