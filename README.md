@@ -367,3 +367,170 @@ Poniżej plan w podejściu **API-first, cloud-native, security-by-design** z my�
 - Core Web Vitals (LCP) dla kluczowych stron: < 2.5 s.
 - Czas wdrożenia zmiany produkcyjnej (lead time): < 1 dzień.
 - Udział zapytań obsłużonych półautomatycznie (AI + workflow): > 40% po 12 miesiącach.
+
+---
+
+## Nowe, uporządkowane treści do wdrożenia (wg nowego layoutu)
+
+Poniżej gotowe teksty dla każdej sekcji z mapy nowej strony. Język został uproszczony, treści uporządkowane i pozbawione powtórzeń.
+
+### 1) Strona główna (Home)
+
+#### 1.1 Hero + główne CTA
+**Nagłówek:**  
+Profesjonalne tłumaczenia i szkolenia językowe w Holandii
+
+**Podnagłówek:**  
+Wspieram klientów prywatnych i firmy w komunikacji prawnej, biznesowej i codziennej.  
+Łączę precyzję językową z uwzględnieniem kontekstu kulturowego.
+
+**CTA główne:** Zapytaj o wycenę  
+**CTA dodatkowe:** [WhatsApp: +31 622438574](https://wa.me/31622438574) / [Zadzwoń: +31 622438574](tel:+31622438574)
+
+#### 1.2 Skrót oferty
+**Tłumaczenia pisemne**  
+Dokumenty urzędowe, prawne, biznesowe i techniczne — rzetelnie, terminowo i z dbałością o styl.
+
+**Tłumaczenia przysięgłe**  
+Tłumaczenia certyfikowane do celów urzędowych i prawnych, zgodne z wymaganiami instytucji.
+
+**Tłumaczenia ustne**  
+Wsparcie podczas spotkań, rozmów urzędowych i spraw formalnych — stacjonarnie lub zdalnie.
+
+**Szkolenia językowe**  
+Indywidualne i firmowe kursy językowe dopasowane do poziomu, branży i celu.
+
+#### 1.3 Języki w pigułce
+Obsługiwane języki: niderlandzki, angielski, szwedzki, norweski, duński, polski, francuski, włoski.  
+W zależności od języka dostępne są tłumaczenia pisemne, ustne i szkolenia.
+
+#### 1.4 Dlaczego warto
+- Ponad 30 lat doświadczenia w tłumaczeniach i nauczaniu języków.  
+- Znajomość realiów kulturowych i różnic komunikacyjnych między językami.  
+- Jakość oparta na wiedzy filologicznej i praktyce zawodowej.  
+- Jasny kontakt, przejrzyste zasady współpracy i poufność danych.
+
+#### 1.5 Opinie / zaufanie
+Klienci cenią współpracę za dokładność, terminowość i spokojne prowadzenie spraw wymagających precyzji językowej.  
+Realizuję zlecenia dla klientów indywidualnych, firm i instytucji.
+
+#### 1.6 FAQ (top 3)
+**Ile kosztuje tłumaczenie?**  
+Cena zależy od języka, rodzaju dokumentu i terminu. Przygotowuję bezpłatną, niezobowiązującą wycenę.
+
+**Czy wykonujesz tłumaczenia przysięgłe?**  
+Tak. Wykonuję tłumaczenia certyfikowane do celów urzędowych i prawnych.
+
+**Jak szybko otrzymam gotowe tłumaczenie?**  
+Termin ustalam po analizie dokumentu. Zlecenia pilne realizuję w miarę dostępności.
+
+---
+
+### 2) O mnie
+
+#### 2.1 Kim jestem
+Nazywam się Magda Czapp. Prowadzę Vertaalbureau Magda w Holandii, kontynuując wieloletnią praktykę biura tłumaczeń prowadzonego wcześniej w Gdyni.
+
+#### 2.2 Kwalifikacje i certyfikacje
+Jestem magistrem filologii skandynawskiej i anglistyki (Uniwersytet Gdański).  
+Wykonuję tłumaczenia przysięgłe i certyfikowane zgodnie z wymaganiami formalnymi.
+
+#### 2.3 Doświadczenie branżowe
+Wspierałam klientów m.in. w sprawach prawnych, urzędowych, biznesowych i technicznych.  
+Mam doświadczenie we współpracy z konsulatami krajów skandynawskich.
+
+#### 2.4 Podejście do jakości
+Dobre tłumaczenie to nie dosłowna zamiana słów.  
+Dbam o znaczenie, styl, ton i kontekst kulturowy, aby tekst był naturalny i wiarygodny w języku docelowym.
+
+---
+
+### 3) Usługi
+
+#### 3.1 Tłumaczenia pisemne
+Tłumaczę dokumenty urzędowe, prawne, biznesowe, techniczne i marketingowe.  
+Każde zlecenie otrzymuje kontrolę terminologii, spójności i poprawności językowej.
+
+**Przykładowe dokumenty:**  
+akty stanu cywilnego, umowy, zaświadczenia, dyplomy, dokumentacja firmowa i materiały informacyjne.
+
+#### 3.2 Tłumaczenia przysięgłe
+Realizuję tłumaczenia wymagające poświadczenia do urzędów, sądów i innych instytucji.  
+Dokumenty przygotowuję zgodnie z wymogami formalnymi i terminami proceduralnymi.
+
+**Proces realizacji:**  
+1. Przesyłasz skan lub zdjęcie dokumentu.  
+2. Otrzymujesz wycenę i termin.  
+3. Po akceptacji realizuję tłumaczenie i przekazuję gotowe dokumenty.
+
+#### 3.3 Tłumaczenia ustne
+Zapewniam tłumaczenie ustne podczas spotkań urzędowych, rozmów biznesowych i konsultacji specjalistycznych.  
+Pracuję z naciskiem na precyzję, neutralność i komfort komunikacji wszystkich stron.
+
+#### 3.4 Szkolenia językowe
+Prowadzę szkolenia indywidualne, grupowe i firmowe, w tym Business English.  
+Program zajęć dopasowuję do poziomu, branży i konkretnych sytuacji zawodowych.
+
+---
+
+### 4) Języki
+
+#### 4.1 Macierz językowa (skrót)
+- **Tłumaczenia pisemne i ustne:** niderlandzki, angielski, szwedzki, norweski, duński, polski, francuski, włoski  
+- **Szkolenia językowe:** angielski, szwedzki, norweski, duński, polski
+
+#### 4.2 Opis par językowych
+Dobieram rozwiązanie do celu tłumaczenia: formalnego, biznesowego lub codziennego.  
+Uwzględniam różnice składniowe, branżowe słownictwo i normy komunikacji właściwe dla danego języka.
+
+#### 4.3 Rekomendowane zastosowania
+- **Prawo i administracja:** dokumenty urzędowe, formalności, pisma procesowe  
+- **Biznes:** umowy, korespondencja, oferty, dokumenty firmowe  
+- **Technika:** instrukcje, opisy produktów, dokumentacja specjalistyczna
+
+---
+
+### 5) Kontakt (MVP)
+
+**Nagłówek:**  
+Porozmawiajmy o Twoim zleceniu
+
+**Treść:**  
+Opisz krótko, czego potrzebujesz, a przygotuję jasną wycenę i realny termin realizacji.
+
+**Kanały kontaktu:**  
+- [WhatsApp: +31 622438574](https://wa.me/31622438574)  
+- Telefon: [+31 622438574](tel:+31622438574)  
+- E-mail: [info@vertaalbureaumagda.nl](mailto:info@vertaalbureaumagda.nl)
+
+**Mikrocopy formularza:**  
+"Twoje dane i dokumenty traktuję poufnie. Odpowiadam najszybciej, jak to możliwe."
+
+---
+
+### 6) Moduły skalowalne (rozszerzenia)
+
+#### 6.1 Blog
+Artykuły o praktyce tłumaczeń, różnicach kulturowych i skutecznej komunikacji w środowisku międzynarodowym.
+
+#### 6.2 Cennik
+Przejrzysty cennik tłumaczeń pisemnych i ustnych, z informacją o stawkach minimalnych, trybie pilnym i rozliczeniach weekendowych.
+
+#### 6.3 Panel klienta
+Bezpieczna przestrzeń do przesyłania plików, śledzenia statusu zleceń, pobierania dokumentów i wglądu w historię współpracy.
+
+#### 6.4 Automatyzacje AI (human-in-the-loop)
+Wstępna klasyfikacja zapytań i wsparcie przygotowania oferty — zawsze z nadzorem człowieka i finalną weryfikacją jakości.
+
+#### 6.5 FAQ (rozszerzone)
+Odpowiedzi na pytania o proces współpracy, terminy, poufność danych i rozliczenia.
+
+#### 6.6 Polityki
+Polityka prywatności, cookies, regulamin usług i informacje RODO przedstawione w prosty, zrozumiały sposób.
+
+---
+
+### 7) Stopka (Footer)
+- Dane kontaktowe i szybkie linki do najważniejszych podstron  
+- Informacje prawne i polityki  
+- Krótki komunikat o poufności i ochronie danych
