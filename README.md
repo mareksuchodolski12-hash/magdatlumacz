@@ -292,7 +292,7 @@ Gotowe do wdrożenia jako treści produkcyjne w CMS.
 
 ### Co mamy teraz
 - Repo zawiera działającą aplikację **Next.js** (strony, komponenty UI, style, konfigurację TypeScript i ESLint).
-- Projekt ma gotowe skrypty developerskie: `npm run dev`, `npm run lint`, `npm run build`.
+- Projekt ma gotowe skrypty deweloperskie: `npm run dev`, `npm run lint`, `npm run build`.
 
 ### Czy to już czas na przejście do Visual Studio?
 **Tak — projekt jest gotowy, żeby „wrzucić” do Visual Studio / VS Code.**  
@@ -304,7 +304,7 @@ To projekt Node.js/Next.js, więc najlepiej pracuje się w VS Code, ale może te
 3. `npm run lint` i `npm run build` (weryfikacja przed publikacją)
 
 ### Kiedy przejście do Visual Studio będzie uzasadnione
-Przejście ma sens, gdy zacznie się etap developerski, np.:
+Przejście ma sens, gdy zacznie się etap deweloperski, np.:
 - powstanie projekt webowy oparty o .NET/C#,
 - pojawi się wiele projektów w jednym solution (`.sln`),
 - dojdzie debugowanie backendu, testy jednostkowe/integracyjne i publikacja.
