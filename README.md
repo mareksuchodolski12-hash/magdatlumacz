@@ -285,3 +285,29 @@ Każdy materiał opiera się na praktyce zawodowej i jest redagowany w sposób z
 ---
 
 Gotowe do wdrożenia jako treści produkcyjne w CMS.
+
+---
+
+## 9) Analiza stanu projektu i decyzja: Visual Studio czy jeszcze nie?
+
+### Co mamy teraz
+- Repo zawiera obecnie wyłącznie dokument `README.md` z gotowym pakietem treści SEO do wdrożenia.
+- Brak kodu aplikacji, brak projektu CMS, brak backendu, brak testów i konfiguracji build/lint.
+
+### Czy to już czas na przejście do Visual Studio?
+**Jeszcze nie jako konieczność.**  
+Na tym etapie pracujesz głównie na treści i strukturze informacji, więc wystarczy lekki edytor (np. VS Code) lub bezpośrednia edycja w repo.
+
+### Kiedy przejście do Visual Studio będzie uzasadnione
+Przejście ma sens, gdy zacznie się etap developerski, np.:
+- powstanie projekt webowy oparty o .NET/C#,
+- pojawi się wiele projektów w jednym solution (`.sln`),
+- dojdzie debugowanie backendu, testy jednostkowe/integracyjne i publikacja.
+
+### Gotowy prompt do użycia w Visual Studio (Copilot Chat)
+„Przygotuj plan wdrożenia strony Vertaalbureau Magda na bazie treści z README w tym repozytorium.  
+1) Zaproponuj strukturę projektu (frontend + CMS lub frontend + API).  
+2) Utwórz mapowanie sekcji SEO z README na komponenty i podstrony.  
+3) Dodaj backlog MVP na 2 tygodnie (priorytety: Home, Usługi, Cennik, Kontakt).  
+4) Zaproponuj stack technologiczny i uzasadnij wybór.  
+5) Dodaj checklistę jakości: SEO techniczne, dostępność, wydajność, analityka, testy.”  
