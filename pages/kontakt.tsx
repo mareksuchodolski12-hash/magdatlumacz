@@ -1,6 +1,6 @@
 import SeoHead from "@/components/SeoHead";
 import Card from "@/components/ui/Card";
-import { getButtonClasses } from "@/components/ui/Button";
+import { getButtonClassName } from "@/components/ui/Button";
 import Section from "@/components/ui/Section";
 
 export default function ContactPage() {
@@ -24,7 +24,7 @@ export default function ContactPage() {
           <ul className="mt-4 space-y-2 leading-relaxed text-slate-700">
             <li>
               WhatsApp:{" "}
-              <a className={getButtonClasses("primary")} href="https://wa.me/31622438574">
+              <a className={getButtonClassName("primary")} href="https://wa.me/31622438574">
                 +31 622438574
               </a>
             </li>

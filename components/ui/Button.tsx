@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes } from "react";
 type ButtonVariant = "primary" | "secondary";
 type ButtonSize = "md" | "lg";
 
-export function getButtonClasses(variant: ButtonVariant = "primary", size: ButtonSize = "md") {
+export function getButtonClassName(variant: ButtonVariant = "primary", size: ButtonSize = "md") {
   const baseClasses =
     "inline-flex items-center justify-center rounded-xl font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2";
   const variantClasses = {
@@ -26,5 +26,5 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 export default function Button({ variant = "primary", size = "md", className = "", type = "button", ...props }: Props) {
-  return <button type={type} className={`${getButtonClasses(variant, size)} ${className}`.trim()} {...props} />;
+  return <button type={type} className={`${getButtonClassName(variant, size)} ${className}`.trim()} {...props} />;
 }

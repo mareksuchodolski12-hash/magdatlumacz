@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
-import Button, { getButtonClasses } from "@/components/ui/Button";
+import Button, { getButtonClassName } from "@/components/ui/Button";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -70,7 +70,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`${getButtonClasses("secondary")} w-full justify-start text-base`}
+                    className={`${getButtonClassName("secondary")} w-full justify-start text-base`}
                     onClick={handleMenuClose}
                   >
                     {item.label}

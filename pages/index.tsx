@@ -1,6 +1,6 @@
 import SeoHead from "@/components/SeoHead";
 import Card from "@/components/ui/Card";
-import { getButtonClasses } from "@/components/ui/Button";
+import { getButtonClassName } from "@/components/ui/Button";
 import Section from "@/components/ui/Section";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ export default function Home() {
           </p>
           <a
             href="https://wa.me/31622438574"
-            className={getButtonClasses("primary", "lg")}
+            className={getButtonClassName("primary", "lg")}
           >
             Napisz na WhatsApp
           </a>
@@ -56,7 +56,7 @@ export default function Home() {
             <p className="mt-4 leading-relaxed text-slate-700">
               Napisz na WhatsApp, aby otrzymać bezpłatną wycenę i proponowany termin realizacji tłumaczenia.
             </p>
-            <Link href="/kontakt" className={`mt-4 ${getButtonClasses("secondary")}`}>
+            <Link href="/kontakt" className={`mt-4 ${getButtonClassName("secondary")}`}>
               Przejdź do kontaktu
             </Link>
           </Card>

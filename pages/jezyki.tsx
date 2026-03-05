@@ -19,7 +19,11 @@ export default function LanguagesPage() {
           <h2 className="section-subtitle">Tłumaczenia pisemne i ustne</h2>
           <ul role="list" className="grid grid-cols-1 gap-3 text-slate-700 md:grid-cols-2 lg:grid-cols-3">
             {allLanguages.map((language) => (
-              <li key={language} role="listitem" className="premium-card p-4 font-medium">
+              <li
+                key={language}
+                role="listitem"
+                className="rounded-xl border border-slate-200/80 bg-white p-4 font-medium shadow-[0_8px_28px_-20px_rgba(15,23,42,0.55)]"
+              >
                 {language}
               </li>
             ))}
