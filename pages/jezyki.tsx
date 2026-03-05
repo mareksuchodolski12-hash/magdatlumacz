@@ -14,7 +14,7 @@ export default function LanguagesPage() {
         <h1 className="text-3xl font-bold text-slate-900">Języki i pary językowe dostępne w ofercie</h1>
 
         <h2 className="mt-8 text-2xl font-semibold text-slate-900">Tłumaczenia pisemne i ustne</h2>
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2 text-slate-700">
+        <ul role="list" className="mt-4 grid gap-3 sm:grid-cols-2 text-slate-700">
           {allLanguages.map((language) => (
             <li key={language} className="rounded-lg bg-white p-4 shadow-sm">
               {language}
