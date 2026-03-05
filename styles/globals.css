@@ -7,3 +7,21 @@ body {
 a {
   @apply transition-colors;
 }
+
+img {
+  @apply h-auto w-full;
+}
+
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-screen-lg px-4 md:px-6 lg:px-8;
+  }
+
+  .page-section {
+    @apply space-y-6 py-12;
+  }
+
+  .readable-copy {
+    @apply max-w-prose leading-relaxed text-slate-700;
+  }
+}
