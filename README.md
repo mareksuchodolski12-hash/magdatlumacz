@@ -169,3 +169,85 @@ Poniżej znajduje się pełna, hierarchiczna lista treści wyekstrahowanych ze s
 ---
 
 *Analiza wykonana na podstawie publicznej zawartości strony https://www.vertaalbureaumagda.nl/ (stan: marzec 2026)*
+
+---
+
+## Proponowana mapa nowej strony (drzewo informacji)
+
+```text
+Strona główna (Home)
+├── Hero + główne CTA
+│   ├── „Zapytaj o wycenę”
+│   └── Szybki kontakt (WhatsApp / zadzwoń)
+├── Skrót oferty
+│   ├── Tłumaczenia pisemne
+│   ├── Tłumaczenia przysięgłe
+│   ├── Tłumaczenia ustne
+│   └── Szkolenia językowe
+├── Języki w pigułce
+├── Dlaczego warto (doświadczenie, jakość, kontekst kulturowy)
+├── Opinie / zaufanie
+└── FAQ (top 3 pytania)
+
+O mnie
+├── Kim jestem
+├── Kwalifikacje i certyfikacje
+├── Doświadczenie branżowe
+└── Podejście do tłumaczeń i jakości
+
+Usługi
+├── Tłumaczenia pisemne
+│   ├── Dokumenty prawne i urzędowe
+│   ├── Dokumenty biznesowe i techniczne
+│   └── Materiały marketingowe
+├── Tłumaczenia przysięgłe
+│   ├── Zakres i formalności
+│   └── Proces realizacji
+├── Tłumaczenia ustne
+│   ├── Prawne
+│   ├── Biznesowe
+│   └── Techniczne
+└── Szkolenia językowe
+    ├── Indywidualne
+    ├── Grupowe
+    └── Dla firm (Business English i dedykowane programy)
+
+Języki
+├── Macierz językowa (tłumaczenia / ustne / szkolenia)
+├── Opisy par językowych
+└── Rekomendowane zastosowania (prawo, biznes, technika)
+
+Kontakt (MVP)
+├── WhatsApp
+└── Zadzwoń: +31 622438574
+
+Moduły skalowalne (rozszerzenia)
+├── Blog
+│   ├── Kategorie: porady językowe / case studies / aktualności
+│   └── Strony wpisów + tagi
+├── Cennik
+│   ├── Tłumaczenia pisemne
+│   ├── Tłumaczenia ustne
+│   └── Dodatki (tryb pilny, weekend)
+├── Panel klienta
+│   ├── Logowanie i role
+│   ├── Przesyłanie plików
+│   ├── Status zleceń
+│   ├── Faktury i płatności
+│   └── Historia współpracy
+├── Automatyzacje AI
+│   ├── Wstępna wycena zapytania
+│   ├── Klasyfikacja typu dokumentu
+│   ├── Asystent briefu tłumaczeniowego
+│   └── Sugestie terminologiczne (human-in-the-loop)
+├── FAQ
+│   ├── Proces współpracy
+│   ├── Terminy i pilne zlecenia
+│   ├── Poufność i bezpieczeństwo danych
+│   └── Rozliczenia
+└── Polityki
+    ├── Polityka prywatności
+    ├── Polityka cookies
+    ├── Regulamin świadczenia usług
+    └── RODO / przetwarzanie danych
+```
