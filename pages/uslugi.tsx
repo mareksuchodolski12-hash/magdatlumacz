@@ -1,4 +1,6 @@
 import SeoHead from "@/components/SeoHead";
+import Card from "@/components/ui/Card";
+import Section from "@/components/ui/Section";
 
 const services = [
   {
@@ -39,28 +41,32 @@ export default function ServicesPage() {
         description="Kompleksowe usługi tłumaczeniowe: tłumaczenia dokumentów, tłumaczenia przysięgłe, interpretacja oraz szkolenia językowe dla firm i osób prywatnych."
         keywords="usługi tłumaczeniowe Holandia, tłumaczenia dokumentów, tłumaczenia ustne"
       />
-      <section className="page-container page-section">
-        <h1 className="text-3xl font-bold text-slate-900">Usługi tłumaczeniowe dopasowane do realnych potrzeb</h1>
-        <p className="readable-copy">
-          Każda usługa jest realizowana z naciskiem na jakość językową, zgodność formalną i bezpieczeństwo danych.
-        </p>
+      <div className="page-container page-section">
+        <Section className="space-y-6">
+          <h1 className="section-title">Usługi tłumaczeniowe dopasowane do realnych potrzeb</h1>
+          <p className="readable-copy">
+            Każda usługa jest realizowana z naciskiem na jakość językową, zgodność formalną i bezpieczeństwo danych.
+          </p>
+        </Section>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <section className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <article key={service.title} className="rounded-xl bg-white p-6 shadow-sm">
-              <h2 className="text-xl font-semibold text-slate-900">{service.title}</h2>
+            <Card key={service.title}>
+              <h2 className="text-xl font-semibold tracking-tight text-slate-900">{service.title}</h2>
               <p className="mt-2 leading-relaxed text-slate-700">{service.description}</p>
-            </article>
+            </Card>
           ))}
-        </div>
+        </section>
 
-        <h3 className="text-xl font-semibold text-slate-900">Proces współpracy</h3>
-        <ol className="list-decimal space-y-2 pl-5 leading-relaxed text-slate-700">
-          <li>Przesyłasz zapytanie lub dokument do analizy.</li>
-          <li>Otrzymujesz wycenę, termin i formę realizacji.</li>
-          <li>Po akceptacji realizuję usługę i przekazuję gotowe materiały.</li>
-        </ol>
-      </section>
+        <Section>
+          <h3 className="section-subtitle">Proces współpracy</h3>
+          <ol className="mt-4 list-decimal space-y-2 pl-5 leading-relaxed text-slate-700">
+            <li>Przesyłasz zapytanie lub dokument do analizy.</li>
+            <li>Otrzymujesz wycenę, termin i formę realizacji.</li>
+            <li>Po akceptacji realizuję usługę i przekazuję gotowe materiały.</li>
+          </ol>
+        </Section>
+      </div>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
+import Button, { getButtonClassName } from "@/components/ui/Button";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -24,29 +25,32 @@ export default function Layout({ children }: { children: ReactNode }) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between px-4 py-4 md:px-6 lg:px-8">
-          <Link href="/" className="text-lg font-bold text-slate-900">
+    <div className="min-h-screen bg-transparent text-slate-900">
+      <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/90 backdrop-blur-md">
+        <div className="page-container flex items-center justify-between py-4">
+          <Link href="/" className="text-lg font-bold tracking-tight text-slate-900 md:text-xl">
             Vertaalbureau Magda
           </Link>
 
-          <button
-            type="button"
-            className="inline-flex min-h-11 items-center rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 xl:hidden"
+          <Button
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
             aria-label="Toggle navigation menu"
             onClick={() => setIsMenuOpen((previous) => !previous)}
+            variant="secondary"
+            className="xl:hidden"
           >
             Menu
-          </button>
+          </Button>
 
           <nav aria-label="Główna nawigacja" className="hidden xl:block">
-            <ul className="flex flex-wrap gap-3 text-sm font-medium">
+            <ul className="flex flex-wrap gap-2 text-sm font-medium">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="inline-flex min-h-11 items-center px-2 text-slate-700 hover:text-slate-900">
+                  <Link
+                    href={item.href}
+                    className="inline-flex min-h-11 items-center rounded-lg px-3 text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -59,14 +63,14 @@ export default function Layout({ children }: { children: ReactNode }) {
           <nav
             id="mobile-navigation"
             aria-label="Nawigacja mobilna"
-            className="border-t border-slate-200 bg-white xl:hidden"
+            className="border-t border-slate-200/90 bg-white/95 xl:hidden"
           >
-            <ul className="mx-auto flex w-full max-w-screen-lg flex-col px-4 py-3 md:px-6 lg:px-8">
+            <ul className="page-container flex flex-col py-3">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="inline-flex min-h-12 w-full items-center rounded-lg px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                    className={`${getButtonClassName("secondary")} w-full justify-start text-base`}
                     onClick={handleMenuClose}
                   >
                     {item.label}
@@ -78,10 +82,10 @@ export default function Layout({ children }: { children: ReactNode }) {
         )}
       </header>
 
-      <main className="text-base leading-relaxed md:text-lg lg:text-xl">{children}</main>
+      <main className="text-base leading-relaxed md:text-lg">{children}</main>
 
-      <footer className="border-t border-slate-200 bg-white py-6">
-        <div className="mx-auto flex w-full max-w-screen-lg flex-col gap-2 px-4 text-sm text-slate-600 md:px-6 lg:px-8">
+      <footer className="border-t border-slate-200/90 bg-white/80 py-8 backdrop-blur-sm">
+        <div className="page-container flex flex-col gap-2 text-sm text-slate-600">
           <p>© {new Date().getFullYear()} Vertaalbureau Magda</p>
           <p>Profesjonalne tłumaczenia i szkolenia językowe w Holandii.</p>
         </div>
