@@ -40,17 +40,17 @@ export default function Home() {
           </article>
           <article className="rounded-xl bg-white p-6 shadow-sm">
             <h2 className="text-xl font-semibold text-slate-900">Obsługiwane języki</h2>
-            <div className="mt-4 flex flex-wrap gap-2" role="list">
+            <ul className="mt-4 flex flex-wrap gap-2" role="list">
               {languages.map((language) => (
-                <span
+                <li
                   key={language}
                   role="listitem"
-                  className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-800"
+                  className="list-none rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-800"
                 >
                   {language}
-                </span>
+                </li>
               ))}
-            </div>
+            </ul>
           </article>
           <article className="rounded-xl bg-white p-6 shadow-sm">
             <h2 className="text-xl font-semibold text-slate-900">Szybki kontakt</h2>

@@ -36,6 +36,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             className="inline-flex min-h-11 items-center rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 xl:hidden"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
+            aria-label="Toggle navigation menu"
             onClick={() => setIsMenuOpen((previous) => !previous)}
           >
             Menu
