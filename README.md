@@ -251,3 +251,119 @@ Moduły skalowalne (rozszerzenia)
     ├── Regulamin świadczenia usług
     └── RODO / przetwarzanie danych
 ```
+
+---
+
+## Plan infrastruktury technicznej (MVP) + roadmapa skalowania
+
+Poniżej plan w podejściu **API-first, cloud-native, security-by-design** z myślą o przyszłej rozbudowie.
+
+### 1) Architektura MVP (0–3 miesiące)
+
+#### 1.1 Hosting i runtime
+- **Frontend**: Next.js (App Router) jako statyczno-hybrydowa aplikacja (SSG + ISR + SSR tam, gdzie potrzeba), hostowana na **Vercel** lub **Cloudflare Pages**.
+- **Backend API**: lekki serwis **Node.js (NestJS/Fastify)** uruchamiany serverless (Vercel Functions / Cloudflare Workers / AWS Lambda).
+- **Storage dla załączników** (np. dokumentów do wyceny): **S3-compatible object storage** (AWS S3 / Cloudflare R2) z pre-signed URL.
+
+#### 1.2 CDN i cache
+- Globalny **CDN edge** (Vercel Edge / Cloudflare CDN) dla assetów statycznych i obrazów.
+- **Warstwy cache**:
+  - Browser cache (Cache-Control, immutable dla assetów z hashem),
+  - Edge cache (strony marketingowe, FAQ, blog),
+  - API response cache (krótkie TTL dla endpointów publicznych).
+- **ISR / revalidation** dla treści CMS, aby łączyć świeżość i wydajność.
+
+#### 1.3 Modularny front-end
+- Monorepo (pnpm + Turborepo/Nx):
+  - `apps/web` – strona publiczna,
+  - `packages/ui` – design system i komponenty wielokrotnego użycia,
+  - `packages/types` – kontrakty typów API/CMS,
+  - `packages/config` – wspólne konfiguracje (eslint/tsconfig).
+- Architektura modułowa sekcji: Home, Usługi, Języki, Kontakt, Blog (feature flags dla modułów niewłączonych w MVP).
+
+#### 1.4 Headless CMS
+- **Strapi / Contentful / Sanity** jako headless CMS.
+- Model treści: strony statyczne, usługi, języki, FAQ, wpisy blogowe, CTA.
+- Publikacja z webhookiem do rewalidacji cache/ISR po zmianie treści.
+- Role i workflow redakcyjne (draft → review → publish).
+
+#### 1.5 API-first
+- Publiczne i wewnętrzne endpointy przez **OpenAPI 3.1**.
+- Kontrakty DTO wersjonowane (`/v1/...`) i walidowane (Zod/class-validator).
+- Minimalne endpointy MVP:
+  - `POST /v1/leads` (formularz kontaktowy i zapytanie o wycenę),
+  - `POST /v1/uploads/presign` (bezpieczny upload dokumentu),
+  - `GET /v1/content/*` (fallback/SSR API pod CMS).
+
+#### 1.6 CI/CD
+- **GitHub Actions**:
+  - PR: lint + typecheck + test + SAST + dependency scan,
+  - main: build + deploy na środowisko staging,
+  - tag/release: deploy production (manual approval gate).
+- Środowiska: **dev → staging → prod**.
+- IaC od startu: Terraform/Pulumi dla CDN, DNS, sekretów i storage.
+
+#### 1.7 Bezpieczeństwo
+- WAF + rate limiting na warstwie edge.
+- Ochrona formularzy: reCAPTCHA/hCaptcha + anti-spam honeypot.
+- CSP, HSTS, X-Frame-Options, Referrer-Policy, SRI dla assetów.
+- Sekrety tylko w managerze (GitHub OIDC + cloud secret manager), brak sekretów w repo.
+- Szyfrowanie danych in-transit (TLS 1.2+) i at-rest.
+- RODO: retencja danych leadów, audyt dostępu, DPA z dostawcami.
+
+#### 1.8 Monitoring i operacyjność
+- **Observability stack**:
+  - logi: Datadog / ELK / Grafana Loki,
+  - metryki: OpenTelemetry + Prometheus/Grafana,
+  - błędy frontend/backend: Sentry.
+- SLO dla MVP:
+  - dostępność publicznej strony: 99.9%,
+  - p95 TTFB < 500 ms dla głównych stron EU.
+- Alerty: 5xx spike, wzrost latency, błędy formularza leadów.
+
+#### 1.9 Integracje AI i automatyzacje (MVP-ready)
+- Warstwa integracyjna `automation-service`:
+  - webhook events (`lead.created`, `file.uploaded`, `quote.requested`),
+  - kolejka (SQS/PubSub) pod przyszłe procesy asynchroniczne.
+- Pierwsze automatyzacje:
+  - klasyfikacja zapytań (typ usługi/język),
+  - szkic odpowiedzi handlowej (human-in-the-loop),
+  - routing leadów do CRM/arkusza.
+
+---
+
+### 2) Roadmapa skalowania (3–24 miesiące)
+
+#### Etap A (3–6 miesięcy): Stabilizacja i wzrost ruchu
+- Multi-region edge cache i image optimization pipeline.
+- Rozbudowa CMS o wielojęzyczność i personalizowane landing pages.
+- Canary deployments + synthetic monitoring.
+- Integracja CRM (HubSpot/Pipedrive) i automatyczna segmentacja leadów.
+
+#### Etap B (6–12 miesięcy): Platformizacja usług
+- Wydzielenie BFF/API Gateway + auth service (OIDC, role klient/tłumacz/admin).
+- Panel klienta: status zleceń, bezpieczny transfer plików, faktury.
+- Event-driven architecture (Kafka/PubSub) dla workflow tłumaczeń.
+- Feature flags i A/B testing na poziomie komponentów frontendu.
+
+#### Etap C (12–18 miesięcy): AI augmentation
+- Dedykowany moduł AI:
+  - ekstrakcja metadanych dokumentów,
+  - estymacja złożoności i czasu realizacji,
+  - sugerowanie glosariusza terminologii.
+- Guardrails: redakcja, wersjonowanie promptów, pełny audyt decyzji AI.
+- RAG na bazie wewnętrznej wiedzy (procedury, słowniki branżowe).
+
+#### Etap D (18–24 miesięcy): Enterprise-ready
+- Multi-cloud failover (np. Cloudflare + AWS) dla krytycznych ścieżek.
+- Zero-downtime migrations, chaos testing, DR drills.
+- Compliance hardening: ISO 27001-ready controls, rozszerzone logowanie audytowe.
+- SLA warstwowe i chargeback kosztów per moduł/usługę.
+
+---
+
+### 3) Docelowe KPI architektury
+- Time-to-publish treści z CMS: < 5 min.
+- Core Web Vitals (LCP) dla kluczowych stron: < 2.5 s.
+- Czas wdrożenia zmiany produkcyjnej (lead time): < 1 dzień.
+- Udział zapytań obsłużonych półautomatycznie (AI + workflow): > 40% po 12 miesiącach.
