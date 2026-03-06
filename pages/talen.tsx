@@ -59,7 +59,7 @@ export default function LanguagesPage() {
   return (
     <>
       <SeoHead
-        title="Talen | NL <-> EN, PL, SE, NO, DK, FR, IT"
+        title="Talen | Nederlands met EN, PL, SE, NO, DK, FR en IT"
         description="Beschikbare taalkoppelingen voor vertaler en tolk: Nederlands met Engels, Pools, Zweeds, Noors, Deens, Frans en Italiaans."
         keywords="vertaler, tolk, beëdigde vertaling, Nederlands, Engels, Pools, Zweeds, Noors, Deens, Frans, Italiaans"
       />

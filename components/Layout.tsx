@@ -4,10 +4,10 @@ import Button, { getButtonClassName } from "@/components/ui/Button";
 
 const navItems = [
   { href: "/", label: "Start" },
-  { href: "/o-mnie", label: "Over mij" },
-  { href: "/uslugi", label: "Diensten" },
-  { href: "/jezyki", label: "Talen" },
-  { href: "/kontakt", label: "Contact" },
+  { href: "/over-mij", label: "Over mij" },
+  { href: "/diensten", label: "Diensten" },
+  { href: "/talen", label: "Talen" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Layout({ children }: { children: ReactNode }) {
@@ -100,7 +100,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             </a>
           </p>
           <p className="w-fit rounded-full border border-[#6F9E8F]/35 bg-[#F3F8F4] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#2B5E52] shadow-[0_8px_20px_-16px_rgba(33,59,52,0.75)]">
-            Signature Line: Crafted for trust, built for results
+            Gecertificeerde taalexpertise voor bedrijven en particulieren
           </p>
         </div>
       </footer>
