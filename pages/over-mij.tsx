@@ -81,7 +81,7 @@ export default function AboutPage() {
                 <li>Ruime ervaring als vertaler en tolk in het Nederlands, Engels, Zweeds, Noors, Deens en Pools.</li>
                 <li>Aanvullende praktijk in Frans en Italiaans binnen internationale opdrachten.</li>
                 <li>NT2 Programma II met staatsdiploma; inzetbaar voor vertalingen van en naar het Nederlands.</li>
-                <li>Specialisaties: juridische, technische en zakelijke teksten, inclusief beedigde vertaling.</li>
+                <li>Specialisaties: juridische, technische en zakelijke teksten, inclusief beëdigde vertaling.</li>
               </ul>
 
               <h2 className="section-subtitle">Mijn kwaliteitsaanpak</h2>

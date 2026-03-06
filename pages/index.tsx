@@ -32,7 +32,7 @@ export default function Home() {
             </h1>
             <p className="text-base leading-relaxed text-slate-100 sm:text-lg">
               Vertaalbureau Magda ondersteunt particulieren, bedrijven en instellingen met nauwkeurige schriftelijke
-              vertalingen, beedigde vertalingen en tolkwerk. Elke opdracht wordt uitgevoerd met oog voor context,
+              vertalingen, beëdigde vertalingen en tolkwerk. Elke opdracht wordt uitgevoerd met oog voor context,
               terminologie en het doel van de tekst.
             </p>
             <div className="gold-divider" />
@@ -74,7 +74,7 @@ export default function Home() {
             <p className="mt-4 leading-relaxed text-gray-700">
               Stuur uw document of vraag via WhatsApp en ontvang snel een heldere offerte met planning.
             </p>
-            <Link href="/kontakt" className={`mt-4 ${getButtonClassName("secondary")}`}>
+            <Link href="/contact" className={`mt-4 ${getButtonClassName("secondary")}`}>
               Naar contact
             </Link>
           </Card>

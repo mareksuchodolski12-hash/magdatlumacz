@@ -20,7 +20,7 @@ export default function ContactPage() {
       taaltraining: "Taaltraining",
       overig: "Overig",
     };
-    const whatsappMessage = `Hallo, ik wil graag een vraag stellen over ${serviceLabels[formData.serviceType]}.\n\n${formData.message}`;
+    const whatsappMessage = `Goedemiddag, ik ontvang graag meer informatie over ${serviceLabels[formData.serviceType]}.\n\n${formData.message}`;
     const whatsappUrl = `https://wa.me/31622438574?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, "_blank");
     setFormData({ serviceType: "vertaling", message: "" });
@@ -73,14 +73,14 @@ export default function ContactPage() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Bv: Nederlands naar Engels, juridisch contract, dinsdag nodig..."
+                  placeholder="Bijv.: Nederlands naar Engels, juridisch contract, dinsdag nodig..."
                   rows={3}
                   className="w-full rounded-xl border border-[#6F9E8F]/25 bg-white px-4 py-3 text-sm text-[#213B34] placeholder-[#6F9E8F]/40 transition focus:border-[#6F9E8F] focus:outline-none"
                 />
               </div>
 
               <button type="submit" className={`mt-6 w-full ${getButtonClassName("primary")}`}>
-                Öffnen in WhatsApp →
+                Verstuur via WhatsApp →
               </button>
             </form>
         </Card>
